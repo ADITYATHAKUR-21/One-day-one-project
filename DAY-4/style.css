@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffffbd;
+   
+}
+
+.container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     gap: 15px;
+}
+
+h1{
+     font-family: "Montserrat", sans-serif;
+}
+
+#quotedisplay{
+     font-family: "Montserrat", sans-serif;
+}
+
+#quotegenerat{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #9d03fc;
+    border-style: none;
+    color: aliceblue;
+}
+#quotegenerat:hover{
+    background-color: #e007f3;
+    cursor: pointer;
+   
+}
+
