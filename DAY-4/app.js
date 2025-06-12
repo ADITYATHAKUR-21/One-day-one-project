@@ -46,7 +46,8 @@ const Quote = [
      "Life's too fun to count calories or grudges.",
      "Be the sunshine in someone's cloudy day.",
      "Fun's the shortcut to a life well-lived.",
-     "Life's a blast—light the fuse and enjoy the boom."
+     "Life's a blast—light the fuse and enjoy the boom.",
+    "munasib dosto se lakh behtar hai khula dusman , gaddari nabbabo se hukumat chhin leti hai"
 ]
 
 const quotegenerat = document.getElementById("quotegenerat")
