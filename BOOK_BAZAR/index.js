@@ -1,18 +1,31 @@
+const container = document.getElementById('container')
+const list = document.getElementById('list');
+const grid = document.getElementById('grid');
+
+list.addEventListener('click', () => {
+  container.classList.remove('grid');
+  container.classList.add('list');
+},
+
+grid.addEventListener('click', () => {
+  container.classList.remove('list');
+  container.classList.add('grid');
+
+})
+
+)
+
 async function getData() {
 
   const response = await fetch('https://api.freeapi.app/api/v1/public/books');
   const res = await response.json();
 
-
   const data = res.data.data;
-
-
 
 
   for (i = 0; i <= 10; i++) {
 
     const book = data[i].volumeInfo;
-
 
     const Thumbnail = document.getElementById(`thumbnail${i}`);
     const Title = document.getElementById(`title${i}`);

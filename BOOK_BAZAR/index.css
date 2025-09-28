@@ -1,10 +1,88 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.body{
+.body {
   background-color: rgba(9, 9, 9, 0.71);
   color: rgb(255, 255, 255);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.icon {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Search {
+  width: 700px;
+  border-radius: 20px;
+  border: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+
+
+}
+
+
+
+.button-one {
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: #1a1a1a;
+  color: #00bcd4;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #00bcd4, 0 0 25px #00bcd4;
+}
+
+.button-one:hover {
+  box-shadow: 0 0 5px #00bcd4, 0 0 25px #00bcd4, 0 0 50px #00bcd4, 0 0 100px #00bcd4;
+}
+
+.button-two {
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: #1a1a1a;
+  color: #00bcd4;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #00bcd4, 0 0 25px #00bcd4;
+}
+
+.button-two:hover {
+  box-shadow: 0 0 5px #00bcd4, 0 0 25px #00bcd4, 0 0 50px #00bcd4, 0 0 100px #00bcd4;
+}
+
+#container {
+  margin: 10px;
+  display: grid;
+  gap: 10px;
+}
+
+#container.grid {
+
+  grid-template-columns: repeat(6, 233px);
+  grid-template-rows: repeat(1, 300px);
+}
+
+#container.list {
+  display: block;
+  gap: 100px;
 }
