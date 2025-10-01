@@ -1,0 +1,131 @@
+/* ====== Global Styles ====== */
+body {
+  font-family: "Georgia", serif;
+  background: #111; /* Black background */
+  color: #f5f5f5;   /* White text */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ====== Card Container ====== */
+.container {
+  background: #1c1c1c;
+  max-width: 700px;
+  width: 90%;
+  padding: 50px 40px;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+/* ====== Quote Text ====== */
+#line {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #fff;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  position: relative;
+  padding: 0 20px;
+}
+
+#line::before,
+#line::after {
+  font-size: 3rem;
+  color: #555;
+  position: absolute;
+  font-family: serif;
+}
+
+#line::before {
+  content: "“";
+  left: -10px;
+  top: -20px;
+}
+
+#line::after {
+  content: "”";
+  right: -10px;
+  bottom: -20px;
+}
+
+/* ====== Buttons Container ====== */
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* ====== Base Button Style ====== */
+button {
+  padding: 12px 22px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  background: transparent;
+  color: #fff;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+/* Hover effects */
+button:hover {
+  background: #fff;
+  color: #111;
+  transform: translateY(-3px);
+}
+
+/* ====== Specific Buttons ====== */
+#Quote {
+  border-color: #007bff;
+}
+#Quote:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+#copy {
+  border-color: #28a745;
+}
+#copy:hover {
+  background: #28a745;
+  color: #fff;
+}
+
+#export {
+  border-color: #ffc107;
+}
+#export:hover {
+  background: #ffc107;
+  color: #111;
+}
+
+#twitter {
+  border-color: #fff;
+  font-weight: bold;
+}
+#twitter:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* ====== Icons ====== */
+button i, button svg {
+  font-size: 1.2rem;
+}
